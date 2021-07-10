@@ -26,7 +26,6 @@
         11. Optional Section Styles
         12. Media Queries
 */
-
 /*
     ------------------------
     ----- 1. Variables -----
@@ -34,18 +33,20 @@
 */
 
 // Define base and accent colors
-$base-color: #64ad76;
+// $base-color: #bee7c9;
+$base-color: #94a78b;
+
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
-$background: #fff;
+$background: rgb(220, 228, 222);
 $background-alt: #f2f2f5;
 
 // Define border colors
 $border: #dcd9d9;
 
 // Define text colors
-$heading: #374054;
+$heading: #343e53;
 $text: #74808a;
 
 /*
@@ -86,7 +87,7 @@ $text: #74808a;
 
 body {
     font-family: 'Lato', sans-serif;
-    font-size: 15px;
+    font-size: 17px;
 
     &.active {
         overflow: hidden;
@@ -100,7 +101,7 @@ body {
         > div {
             background: $background;
             padding: 10px;
-            margin-bottom: 11px;
+            margin-bottom: 10px;
             border: 1px solid $border;
 
             h3 {
@@ -151,6 +152,8 @@ header {
     animation-iteration-count: 1;
     animation-timing-function: ease;
     animation-duration: 0.75s;
+    font-weight: 900;
+    
 
     ul {
         display: inline-block;
@@ -197,6 +200,7 @@ header {
 #menu {
     &.active {
         display: block;
+                
     }
 }
 
@@ -224,6 +228,7 @@ header {
     padding-top: 10px;
     cursor: pointer;
     color: $base-color;
+   
 
     span {
         font-size: 0.5em;
@@ -299,6 +304,7 @@ footer {
     border: 3px solid #fff;
     border-radius: 30px;
     @include transition();
+    box-shadow: 2px 2px 2px 2px #30003a;
 
     &:hover {
         color: $base-color;
@@ -308,7 +314,7 @@ footer {
 }
 
 .shadow {
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,1.5);
 }
 
 .shadow-large {
@@ -322,6 +328,16 @@ footer {
     font-weight: 300;
     margin: 0 0 30px 0;
 
+	letter-spacing:0.1em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: .3px;
+  -webkit-text-stroke-color: rgb(46, 9, 44);
+  text-shadow: 
+						8px 8px #9d739e;
+						
+   
+
+    
     &:after {
         position: absolute;
         content: '';
@@ -334,6 +350,7 @@ footer {
         background: $base-color;
     }
 }
+
 
 .background-alt {
     background: $background-alt;
@@ -459,6 +476,8 @@ footer {
     }
 }
 
+  
+
 /*
     --------------------------------
     ----- 6. Experience Styles -----
@@ -538,7 +557,7 @@ footer {
 .vtimeline-point {
     position: relative;
     display: block;
-    vertical-align: top;
+    // vertical-align: top;
     margin-bottom: 30px;
 }
 
@@ -634,6 +653,8 @@ footer {
     padding: 50px 15px;
     border-bottom: 1px solid $border;
     text-align: center;
+    
+  
 
     h2 {
         color: $heading;
@@ -646,7 +667,7 @@ footer {
     max-width: 900px;
     margin: 0 auto 30px auto;
     overflow: hidden;
-    background: #fff;
+    background: rgb(255, 255, 255);
     border-radius: 4px;
 }
 
@@ -660,10 +681,12 @@ footer {
     transform: translateY(-50%);
     margin-left: 300px;
     padding: 15px;
+    font-weight: 700;
 
     h3 {
         font-size: 1.5em;
         font-weight: 300;
+         
         color: $heading;
         margin: 0 0 15px 0;
     }
@@ -673,6 +696,7 @@ footer {
         margin: 0 0 15px 0;
         font-size: 0.9em;
     }
+   
 }
 
 .no-image {
@@ -886,10 +910,21 @@ footer {
         left: auto;
         top: auto;
 
+
         h1 {
             font-size: 3em;
+    
+            //   text-align: center;
+            // height:90vh;
+            // line-height: 90vh;
+            //   color: #fcedd8;
+            //   background: #d52e3f;
+                //  font-family: 'Niconne', cursive;
+            //   font-weight: 700;
+            
+      
         }
-
+                                
         h2 {
             font-size: 1.75em;
         }
