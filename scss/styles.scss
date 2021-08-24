@@ -670,7 +670,20 @@ footer {
 .project-image {
     float: left;
 }
+.slidershow{
+    width:700px;
+    height:400px;
+    overflow: hidden;
+    
 
+}
+
+.middle{
+    position:absolute;
+    top: 50%;
+    left: 50%
+    transform( translate)
+}
 .project-info {
     position: absolute;
     top: 50%;
